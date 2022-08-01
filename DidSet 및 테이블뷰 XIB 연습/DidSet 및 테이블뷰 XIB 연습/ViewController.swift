@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     ] {
         didSet {
 //            XIB.reloadData()
-            print("데이터 리로드됨")
+//            print("이전 데이터 \(oldValue)에서 \(list)데이터로 갱신됨.")
         }
     }
     
@@ -48,6 +48,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.checkBoxButton.tag = indexPath.row
         cell.checkBoxButton.addTarget(self, action: #selector(clickedButton(sender:)), for: .touchUpInside)
         
+        //선생님 코드
 //        let value = list[indexPath.row].done ? "checkmark.square.fill" : "checkmark.square"
 //        cell.checkBoxButton.setImage(UIImage(systemName: value), for: .normal)
         
@@ -57,18 +58,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @objc func clickedButton(sender: UIButton) {
         print("클릭한 버튼은 \(sender.tag)번째 버튼")
         
-//        list[sender.tag].done = !list[sender.tag].done
-////        XIB.reloadRows(at: [IndexPath(row: sender.tag, section: 0)], with: .fade)
-//        XIB.reloadData()
-        
+        // 내가 작성한 코드
         if list[sender.tag].done == false {
-            list[sender.tag].done = true
             sender.setImage(UIImage(systemName: "checkmark.square.fill"), for: .normal)
+            list[sender.tag].done = true
+            
         } else if list[sender.tag].done == true {
-            list[sender.tag].done = false
             sender.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+            list[sender.tag].done = false
         }
-        XIB.reloadData()
+        
+        // 선생님 코드
+//        list[sender.tag].done = !list[sender.tag].done
+
+        XIB.reloadRows(at: [IndexPath(row: sender.tag, section: 0)], with: .fade)
+
         
         // 데이터도 재사용되는 문제
 //        sender.setImage(UIImage(systemName: "checkmark.square"), for: .normal)

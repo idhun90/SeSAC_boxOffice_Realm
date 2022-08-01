@@ -9,7 +9,9 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
     
-    static let id = "ListTableViewCell"
+    //08.11
+    
+//    static let id = "ListTableViewCell"
 
     @IBOutlet weak var titleLabel: UILabel!
     

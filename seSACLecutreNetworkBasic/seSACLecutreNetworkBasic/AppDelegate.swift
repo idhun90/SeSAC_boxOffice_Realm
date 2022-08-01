@@ -8,15 +8,28 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // 노티 제거
+        // 페딩은 앞으로 받을 예정인 노티들도 삭제 됨
+        UNUserNotificationCenter.current().removeAllDeliveredNotifications()
+        
+        UNUserNotificationCenter.current().delegate = self
+        
         return true
     }
 
+    // 포그라운드 수신
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.list, .banner, .badge, .sound])
+        // iOS 14부터 alert이 list, banner로 나뉘어졌다.
+        
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		149E2DF828920CDA00E4DD5C /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E2DF728920CDA00E4DD5C /* ViewPresentableProtocol.swift */; };
+		149E2DFA2892236800E4DD5C /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E2DF92892236800E4DD5C /* LottoViewController.swift */; };
+		149E2DFC2892305200E4DD5C /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E2DFB2892305200E4DD5C /* TranslateViewController.swift */; };
+		149E2DFE28923A9400E4DD5C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E2DFD28923A9400E4DD5C /* WebViewController.swift */; };
+		14A34E0E2897527A00FFD440 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A34E0D2897527A00FFD440 /* ReusableViewProtocol.swift */; };
+		14A34E112897579100FFD440 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A34E102897579100FFD440 /* Constant.swift */; };
+		14A34E1328975FA000FFD440 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A34E1228975FA000FFD440 /* UserDefaultsHelper.swift */; };
+		14A34E1628977CE400FFD440 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 14A34E1528977CE400FFD440 /* Alamofire */; };
+		14A34E1928977CFB00FFD440 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 14A34E1828977CFB00FFD440 /* SwiftyJSON */; };
+		14A34E1B2897EE4800FFD440 /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A34E1A2897EE4800FFD440 /* BeerViewController.swift */; };
+		14E3EA6528935D3F003524FD /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E3EA6428935D3F003524FD /* LocationViewController.swift */; };
+		14E3EA68289384DD003524FD /* SUIT-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14E3EA67289384DD003524FD /* SUIT-Regular.ttf */; };
 		14EE6EA62890DD8500FC44E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EE6EA52890DD8500FC44E4 /* AppDelegate.swift */; };
 		14EE6EA82890DD8500FC44E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EE6EA72890DD8500FC44E4 /* SceneDelegate.swift */; };
 		14EE6EAA2890DD8500FC44E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EE6EA92890DD8500FC44E4 /* ViewController.swift */; };
@@ -19,6 +31,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		149E2DF728920CDA00E4DD5C /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
+		149E2DF92892236800E4DD5C /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		149E2DFB2892305200E4DD5C /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		149E2DFD28923A9400E4DD5C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		14A34E0D2897527A00FFD440 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		14A34E102897579100FFD440 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		14A34E1228975FA000FFD440 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		14A34E1A2897EE4800FFD440 /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
+		14E3EA6428935D3F003524FD /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		14E3EA67289384DD003524FD /* SUIT-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Regular.ttf"; sourceTree = "<group>"; };
 		14EE6EA22890DD8500FC44E4 /* seSACLecutreNetworkBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seSACLecutreNetworkBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EE6EA52890DD8500FC44E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14EE6EA72890DD8500FC44E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,12 +59,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A34E1928977CFB00FFD440 /* SwiftyJSON in Frameworks */,
+				14A34E1628977CE400FFD440 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		149E2DF628920CA100E4DD5C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				149E2DF728920CDA00E4DD5C /* ViewPresentableProtocol.swift */,
+				14A34E0D2897527A00FFD440 /* ReusableViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		14A34E0F2897578100FFD440 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				14A34E102897579100FFD440 /* Constant.swift */,
+				14A34E1228975FA000FFD440 /* UserDefaultsHelper.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		14E3EA66289384B0003524FD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				14E3EA67289384DD003524FD /* SUIT-Regular.ttf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		14EE6E992890DD8500FC44E4 = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +112,21 @@
 		14EE6EA42890DD8500FC44E4 /* seSACLecutreNetworkBasic */ = {
 			isa = PBXGroup;
 			children = (
+				14A34E0F2897578100FFD440 /* Constant */,
+				14E3EA66289384B0003524FD /* Resource */,
+				149E2DF628920CA100E4DD5C /* Protocol */,
 				14EE6EA52890DD8500FC44E4 /* AppDelegate.swift */,
 				14EE6EA72890DD8500FC44E4 /* SceneDelegate.swift */,
 				14EE6EA92890DD8500FC44E4 /* ViewController.swift */,
 				14EE6EAB2890DD8500FC44E4 /* Main.storyboard */,
+				14A34E1A2897EE4800FFD440 /* BeerViewController.swift */,
+				14E3EA6428935D3F003524FD /* LocationViewController.swift */,
+				149E2DFD28923A9400E4DD5C /* WebViewController.swift */,
+				14EE6EB92890E1F800FC44E4 /* SearchViewController.swift */,
+				149E2DFB2892305200E4DD5C /* TranslateViewController.swift */,
+				149E2DF92892236800E4DD5C /* LottoViewController.swift */,
 				14EE6EBB2890E4D400FC44E4 /* ListTableViewCell.swift */,
 				14EE6EBC2890E4D400FC44E4 /* ListTableViewCell.xib */,
-				14EE6EB92890E1F800FC44E4 /* SearchViewController.swift */,
 				14EE6EAE2890DD8600FC44E4 /* Assets.xcassets */,
 				14EE6EB02890DD8600FC44E4 /* LaunchScreen.storyboard */,
 				14EE6EB32890DD8600FC44E4 /* Info.plist */,
@@ -92,6 +150,10 @@
 			dependencies = (
 			);
 			name = seSACLecutreNetworkBasic;
+			packageProductDependencies = (
+				14A34E1528977CE400FFD440 /* Alamofire */,
+				14A34E1828977CFB00FFD440 /* SwiftyJSON */,
+			);
 			productName = seSACLecutreNetworkBasic;
 			productReference = 14EE6EA22890DD8500FC44E4 /* seSACLecutreNetworkBasic.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +182,10 @@
 				Base,
 			);
 			mainGroup = 14EE6E992890DD8500FC44E4;
+			packageReferences = (
+				14A34E1428977CE400FFD440 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				14A34E1728977CFB00FFD440 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 14EE6EA32890DD8500FC44E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +203,7 @@
 				14EE6EB22890DD8600FC44E4 /* LaunchScreen.storyboard in Resources */,
 				14EE6EBE2890E4D400FC44E4 /* ListTableViewCell.xib in Resources */,
 				14EE6EAF2890DD8600FC44E4 /* Assets.xcassets in Resources */,
+				14E3EA68289384DD003524FD /* SUIT-Regular.ttf in Resources */,
 				14EE6EAD2890DD8500FC44E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,10 +216,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				14EE6EAA2890DD8500FC44E4 /* ViewController.swift in Sources */,
+				14A34E1328975FA000FFD440 /* UserDefaultsHelper.swift in Sources */,
+				14A34E1B2897EE4800FFD440 /* BeerViewController.swift in Sources */,
+				149E2DFE28923A9400E4DD5C /* WebViewController.swift in Sources */,
 				14EE6EA62890DD8500FC44E4 /* AppDelegate.swift in Sources */,
 				14EE6EBA2890E1F800FC44E4 /* SearchViewController.swift in Sources */,
+				149E2DFA2892236800E4DD5C /* LottoViewController.swift in Sources */,
+				14E3EA6528935D3F003524FD /* LocationViewController.swift in Sources */,
 				14EE6EA82890DD8500FC44E4 /* SceneDelegate.swift in Sources */,
+				149E2DFC2892305200E4DD5C /* TranslateViewController.swift in Sources */,
+				149E2DF828920CDA00E4DD5C /* ViewPresentableProtocol.swift in Sources */,
+				14A34E0E2897527A00FFD440 /* ReusableViewProtocol.swift in Sources */,
 				14EE6EBD2890E4D400FC44E4 /* ListTableViewCell.swift in Sources */,
+				14A34E112897579100FFD440 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +444,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14A34E1428977CE400FFD440 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		14A34E1728977CFB00FFD440 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14A34E1528977CE400FFD440 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14A34E1428977CE400FFD440 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		14A34E1828977CFB00FFD440 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14A34E1728977CFB00FFD440 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14EE6E9A2890DD8500FC44E4 /* Project object */;
 }
