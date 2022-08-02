@@ -51,13 +51,28 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // 테이블뷰가 사용할 테이블뷰 셀(XIB파일) 등록
         // XIB: xml interface Builder, 예전엔 Nib이라고 불렸다.
         searchTableView.register(UINib(nibName: ListTableViewCell.resueIdentifier, bundle: nil), forCellReuseIdentifier: ListTableViewCell.resueIdentifier)
+        searchTableView.rowHeight = 70
         // nibName도 identifier랑 같은 문자열이다. 리터럴 문자열 제거 필요
         
         searchBar.delegate = self
         
         //0802
-        requestBoxOffice(text: "20220801")
+        requestBoxOffice(text: calculatedDate())
         
+       
+    }
+    
+    func calculatedDate() -> String {
+        let date = Date()
+        let mydate = DateFormatter()
+        mydate.dateFormat = "yyyyMMdd"
+        
+        guard let previousDay = Calendar.current.date(byAdding: .day, value: -1, to: date, wrappingComponents: false) else { return "오류 발생" }
+    
+        let previous = mydate.string(from: previousDay)
+        print(previous)
+        
+        return previous
     }
     
     //MARK: - 프로토콜
@@ -87,7 +102,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                print("JSON: \(json)")
+//                print("JSON: \(json)")
                 
 //                self.list.removeAll() // 서버 통신을 하기 전에 데이터가 성공 시 배열 삭제 위치2
                 // 반복문으로 코드 개선
@@ -101,7 +116,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     
                     self.list.append(data)
                 }
-                print(self.list)
+//                print(self.list)
 //                // 테이블 뷰에 보여줄 자료 구성하기
 //                let movieNM1 = json["boxOfficeResult"]["dailyBoxOfficeList"][0]["movieNm"].stringValue
 //                let movieNM2 = json["boxOfficeResult"]["dailyBoxOfficeList"][1]["movieNm"].stringValue
@@ -140,7 +155,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ListTableViewCell.resueIdentifier, for: indexPath) as? ListTableViewCell else { return UITableViewCell()}
         
         cell.backgroundColor = .clear // 이렇게 하면 투명하게 되면서  뷰컨트롤러, 테이블뷰 컨트롤러 백그라운드 색상과 같아져서 작업량을 줄일 수 있다.
-        cell.titleLabel.font = .boldSystemFont(ofSize: 22)
+        cell.titleLabel.font = .boldSystemFont(ofSize: 17)
+        print("cell 파일과 이것 중 뭐가 나중에?")
         cell.titleLabel.text = "\(list[indexPath.row].movieTitle): \(list[indexPath.row].releaseData)"
         
         // viewdidload에서 호출될 때 list는 0

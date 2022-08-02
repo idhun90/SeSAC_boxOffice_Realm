@@ -13,7 +13,13 @@ class ListTableViewCell: UITableViewCell {
     
 //    static let id = "ListTableViewCell"
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            titleLabel.textAlignment = .center
+            titleLabel.font = .systemFont(ofSize: 10)
+            print("호출됨")
+        }
+    }
     
     
     override func awakeFromNib() {

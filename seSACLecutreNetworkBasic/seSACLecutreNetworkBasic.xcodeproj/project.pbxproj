@@ -100,6 +100,28 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
+		14DA84C32899938900EA8F9E /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				14DA84C1289983CE00EA8F9E /* BeerModel.swift */,
+				14DA84BF2899829800EA8F9E /* BeerListViewController.swift */,
+				14DA84BB28997F4A00EA8F9E /* BeerTableViewCell.swift */,
+				14DA84BC28997F4A00EA8F9E /* BeerTableViewCell.xib */,
+			);
+			path = BeerList;
+			sourceTree = "<group>";
+		};
+		14DA84C52899947200EA8F9E /* BoxOffice */ = {
+			isa = PBXGroup;
+			children = (
+				1435EB9E2898BD19006269CE /* BoxOfficeModel.swift */,
+				14EE6EB92890E1F800FC44E4 /* SearchViewController.swift */,
+				14EE6EBB2890E4D400FC44E4 /* ListTableViewCell.swift */,
+				14EE6EBC2890E4D400FC44E4 /* ListTableViewCell.xib */,
+			);
+			path = BoxOffice;
+			sourceTree = "<group>";
+		};
 		14E3EA66289384B0003524FD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,19 +156,13 @@
 				14EE6EA72890DD8500FC44E4 /* SceneDelegate.swift */,
 				14EE6EA92890DD8500FC44E4 /* ViewController.swift */,
 				14EE6EAB2890DD8500FC44E4 /* Main.storyboard */,
-				14DA84C1289983CE00EA8F9E /* BeerModel.swift */,
-				14DA84BF2899829800EA8F9E /* BeerListViewController.swift */,
-				14DA84BB28997F4A00EA8F9E /* BeerTableViewCell.swift */,
-				14DA84BC28997F4A00EA8F9E /* BeerTableViewCell.xib */,
+				14DA84C32899938900EA8F9E /* BeerList */,
 				14A34E1A2897EE4800FFD440 /* BeerViewController.swift */,
 				14E3EA6428935D3F003524FD /* LocationViewController.swift */,
 				149E2DFD28923A9400E4DD5C /* WebViewController.swift */,
-				14EE6EB92890E1F800FC44E4 /* SearchViewController.swift */,
-				1435EB9E2898BD19006269CE /* BoxOfficeModel.swift */,
+				14DA84C52899947200EA8F9E /* BoxOffice */,
 				149E2DFB2892305200E4DD5C /* TranslateViewController.swift */,
 				149E2DF92892236800E4DD5C /* LottoViewController.swift */,
-				14EE6EBB2890E4D400FC44E4 /* ListTableViewCell.swift */,
-				14EE6EBC2890E4D400FC44E4 /* ListTableViewCell.xib */,
 				14EE6EAE2890DD8600FC44E4 /* Assets.xcassets */,
 				14EE6EB02890DD8600FC44E4 /* LaunchScreen.storyboard */,
 				14EE6EB32890DD8600FC44E4 /* Info.plist */,
