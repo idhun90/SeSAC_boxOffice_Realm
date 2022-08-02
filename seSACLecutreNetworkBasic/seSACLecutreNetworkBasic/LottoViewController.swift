@@ -55,7 +55,7 @@ class LottoViewController: UIViewController {
     func requestLotto(number: Int) {
         
         // AF: 200~299 성공으로 간주 status code
-        let url = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(number)"
+        let url = "\(EndPoint.lottoURL)&drwNo=\(number)"
         AF.request(url, method: .get).validate(statusCode: 200..<400).responseJSON { response in
             switch response.result {
             case .success(let value):
@@ -70,7 +70,6 @@ class LottoViewController: UIViewController {
                 for number in 0...jsonNo.count-1 {
                     
                     labelList[number]?.text = "\(json[jsonNo[number]].intValue)"
-                    print(labelList[number]!.text!)
                 }
                 
                 
@@ -78,11 +77,11 @@ class LottoViewController: UIViewController {
 //                print(bonus)
 //
                 let date = json["drwNoDate"].stringValue
-                print(date)
+//                print(date)
                 
                 //스토리보드에 표현해주기
                 self.numberTextField.text = date
-//                print("====2====")
+                print("====2====")
                 
             case .failure(let error):
                 print(error)

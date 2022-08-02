@@ -56,3 +56,25 @@ enum FontName {
     static let body = "SanFransisco"
     static let caption = "AppleSandol"
 }
+
+
+//0802
+// API, URL 관리
+struct APIKey {
+    //키 값 같은 중요한 내용은 강조하는 식으로 대문자로 해도 된다
+    static let BOXOFFICE = "5cccf89fd6c5d10269947847d0a28fa7"
+    
+    static let NAVER_ID = "zP8kKI8uyo4gD3hnPrmg"
+    static let NAVER_SECRET = "1Om9Pr6qK5"
+}
+
+// URL을 ENDPOINT로 표현한다.
+struct EndPoint {
+    
+    //주소의 공통적으로 사용되는 부분 가져오기
+    static let boxOfficeURL = "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?"
+    static let lottoURL = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber"
+    static let translateURL = "https://openapi.naver.com/v1/papago/n2mt"
+    static let beerURL = "https://api.punkapi.com/v2/beers"
+    
+}

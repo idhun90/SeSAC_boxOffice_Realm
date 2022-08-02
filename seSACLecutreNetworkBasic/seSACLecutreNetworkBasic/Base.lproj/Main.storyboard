@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yfC-d4-dGy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LMX-Sb-Otk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -347,6 +347,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Szo-lk-jH5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="882.60869565217399" y="806.91964285714278"/>
+        </scene>
+        <!--Beer List View Controller-->
+        <scene sceneID="b2m-Z7-gd6">
+            <objects>
+                <viewController storyboardIdentifier="BeerListViewController" id="LMX-Sb-Otk" customClass="BeerListViewController" customModule="seSACLecutreNetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n8j-dI-Qf4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XQF-D8-mhw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wdx-nl-XYc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XQF-D8-mhw" secondAttribute="bottom" id="4M8-Xv-By1"/>
+                            <constraint firstItem="XQF-D8-mhw" firstAttribute="top" secondItem="wdx-nl-XYc" secondAttribute="top" id="JV6-iL-aOJ"/>
+                            <constraint firstItem="wdx-nl-XYc" firstAttribute="trailing" secondItem="XQF-D8-mhw" secondAttribute="trailing" id="V5v-Ve-LwS"/>
+                            <constraint firstItem="XQF-D8-mhw" firstAttribute="leading" secondItem="wdx-nl-XYc" secondAttribute="leading" id="edm-mB-PCi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beerTableView" destination="XQF-D8-mhw" id="awC-J4-0oj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twn-6o-ihQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629" y="807"/>
         </scene>
         <!--Translate View Controller-->
         <scene sceneID="3Xa-YL-e4b">

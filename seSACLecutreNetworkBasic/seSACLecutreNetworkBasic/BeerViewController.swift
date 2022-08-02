@@ -41,11 +41,6 @@ class BeerViewController: UIViewController {
                 self.descriptionLabel.text = description
                 self.paringFoodLabel.text = foodPairing
                 
-                print("출력 결과: \(beerName)")
-                print("출력 결과: \(imageUrl)")
-                print("출력 결과: \(description)")
-                print("출력 결과: \(foodPairing)")
-                
             case .failure(let error):
                 print(error)
             }
