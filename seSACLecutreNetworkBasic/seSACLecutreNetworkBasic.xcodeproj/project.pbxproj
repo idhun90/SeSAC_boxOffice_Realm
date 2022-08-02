@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1435EB9F2898BD19006269CE /* BoxOfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435EB9E2898BD19006269CE /* BoxOfficeModel.swift */; };
 		149E2DF828920CDA00E4DD5C /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E2DF728920CDA00E4DD5C /* ViewPresentableProtocol.swift */; };
 		149E2DFA2892236800E4DD5C /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E2DF92892236800E4DD5C /* LottoViewController.swift */; };
 		149E2DFC2892305200E4DD5C /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E2DFB2892305200E4DD5C /* TranslateViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1435EB9E2898BD19006269CE /* BoxOfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeModel.swift; sourceTree = "<group>"; };
 		149E2DF728920CDA00E4DD5C /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
 		149E2DF92892236800E4DD5C /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		149E2DFB2892305200E4DD5C /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				14E3EA6428935D3F003524FD /* LocationViewController.swift */,
 				149E2DFD28923A9400E4DD5C /* WebViewController.swift */,
 				14EE6EB92890E1F800FC44E4 /* SearchViewController.swift */,
+				1435EB9E2898BD19006269CE /* BoxOfficeModel.swift */,
 				149E2DFB2892305200E4DD5C /* TranslateViewController.swift */,
 				149E2DF92892236800E4DD5C /* LottoViewController.swift */,
 				14EE6EBB2890E4D400FC44E4 /* ListTableViewCell.swift */,
@@ -227,6 +230,7 @@
 				14A34E1B2897EE4800FFD440 /* BeerViewController.swift in Sources */,
 				149E2DFE28923A9400E4DD5C /* WebViewController.swift in Sources */,
 				14EE6EA62890DD8500FC44E4 /* AppDelegate.swift in Sources */,
+				1435EB9F2898BD19006269CE /* BoxOfficeModel.swift in Sources */,
 				14EE6EBA2890E1F800FC44E4 /* SearchViewController.swift in Sources */,
 				149E2DFA2892236800E4DD5C /* LottoViewController.swift in Sources */,
 				14E3EA6528935D3F003524FD /* LocationViewController.swift in Sources */,

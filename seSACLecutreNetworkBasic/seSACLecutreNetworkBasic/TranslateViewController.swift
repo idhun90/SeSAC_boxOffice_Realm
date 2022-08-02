@@ -7,6 +7,9 @@
 
 import UIKit
 
+import Alamofire
+import SwiftyJSON
+
 class TranslateViewController: UIViewController {
     
     // UIButton, UITextField > Action
@@ -20,9 +23,19 @@ class TranslateViewController: UIViewController {
     
     // 우리의 목적은 텍스트뷰의 플레이스홀더
     @IBOutlet weak var userInputTextView: UITextView!
+    @IBOutlet weak var translatedTextView: UITextView! {
+        didSet {
+            translatedTextView.text = ""
+            translatedTextView.textColor = .black
+            translatedTextView.layer.borderWidth = 1
+            translatedTextView.layer.cornerRadius = 5
+            translatedTextView.font = UIFont(name: "SUIT-Regular", size: 20)
+            translatedTextView.backgroundColor = .systemGray6
+            print("didSet 호출됨")
+        }
+    }
     
-    
-    let textViewPlacehoderText = "번역하고 싶은 문장을 작성해보세요."
+    let textViewPlacehoderText = "텍스트 입력"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,15 +44,65 @@ class TranslateViewController: UIViewController {
         
         userInputTextView.text = textViewPlacehoderText
         userInputTextView.textColor = .lightGray
+        userInputTextView.layer.borderWidth = 1
+        userInputTextView.layer.cornerRadius = 5
         
         //폰트 프로퍼티를 활용
         //디폴트 속성들은 SF에만 적용되는 코드들, 우리가 사용할 코드는 따로 바꿔줘야 한다.
-//        userInputTextView.font = UIFont(name: "SUIT-Regular", size: 17)
+        userInputTextView.font = UIFont(name: "SUIT-Regular", size: 20)
         
+//        requestTranslateData(text: "안녕하세요.")
+    }
+    
+    //0822
+    func requestTranslateData(text: String) {
+        
+        let url = EndPoint.translateURL
+        //네이버는 보안을 위해 쿼리스트링을 쓰지 않고 https 헤더를 사용
+        
+        let parameter = ["source": "ko", "target": "zh-CN", "text": "\(text)"]
+        
+        let header: HTTPHeaders = ["X-Naver-Client-Id": APIKey.NAVER_ID, "X-Naver-Client-Secret": APIKey.NAVER_SECRET]
+        
+        
+        AF.request(url, method: .post, parameters: parameter, headers: header).validate(statusCode: 200...500).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print("JSON: \(json)")
+                
+                let statusCode = response.response?.statusCode ?? 500
+                
+                // 보통 성공적으로 응당이 오면 200대이다.
+                if statusCode == 200 {
+                    
+                    let translatedText = json["message"]["result"]["translatedText"].stringValue
+//                    self.userInputTextView.text = translatedText
+                    self.translatedTextView.text = translatedText
+                    
+                } else {
+                    self.userInputTextView.text = json["errorMessage"].stringValue
+                    // 오류 문구를 텍스트필드에 보여주겠다.
+                }
+                
+               
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    @IBAction func TranslateButtonClicked(_ sender: UIButton) {
+        
+        requestTranslateData(text: userInputTextView.text)
         
     }
-
+    
+    
 }
+
+
 
 extension TranslateViewController: UITextViewDelegate {
     
