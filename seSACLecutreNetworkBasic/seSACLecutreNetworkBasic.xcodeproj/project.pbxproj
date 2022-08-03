@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1435EB9F2898BD19006269CE /* BoxOfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435EB9E2898BD19006269CE /* BoxOfficeModel.swift */; };
+		1458220E289A094300B13710 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458220D289A094300B13710 /* ImageSearchViewController.swift */; };
 		149E2DF828920CDA00E4DD5C /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E2DF728920CDA00E4DD5C /* ViewPresentableProtocol.swift */; };
 		149E2DFA2892236800E4DD5C /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E2DF92892236800E4DD5C /* LottoViewController.swift */; };
 		149E2DFC2892305200E4DD5C /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E2DFB2892305200E4DD5C /* TranslateViewController.swift */; };
@@ -20,6 +21,9 @@
 		14A34E1B2897EE4800FFD440 /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A34E1A2897EE4800FFD440 /* BeerViewController.swift */; };
 		14A34E1E28980B0900FFD440 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 14A34E1D28980B0900FFD440 /* Kingfisher */; };
 		14A34E2028980D3000FFD440 /* BeerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A34E1F28980D3000FFD440 /* BeerViewProtocol.swift */; };
+		14D40F0D289A679300ECB159 /* ImageSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D40F0B289A679300ECB159 /* ImageSearchCollectionViewCell.swift */; };
+		14D40F0E289A679300ECB159 /* ImageSearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14D40F0C289A679300ECB159 /* ImageSearchCollectionViewCell.xib */; };
+		14D40F10289A6B8F00ECB159 /* ImageSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D40F0F289A6B8F00ECB159 /* ImageSearchModel.swift */; };
 		14DA84BD28997F4A00EA8F9E /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA84BB28997F4A00EA8F9E /* BeerTableViewCell.swift */; };
 		14DA84BE28997F4A00EA8F9E /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DA84BC28997F4A00EA8F9E /* BeerTableViewCell.xib */; };
 		14DA84C02899829800EA8F9E /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA84BF2899829800EA8F9E /* BeerListViewController.swift */; };
@@ -39,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		1435EB9E2898BD19006269CE /* BoxOfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeModel.swift; sourceTree = "<group>"; };
+		1458220D289A094300B13710 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
 		149E2DF728920CDA00E4DD5C /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
 		149E2DF92892236800E4DD5C /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		149E2DFB2892305200E4DD5C /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +53,9 @@
 		14A34E1228975FA000FFD440 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		14A34E1A2897EE4800FFD440 /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
 		14A34E1F28980D3000FFD440 /* BeerViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewProtocol.swift; sourceTree = "<group>"; };
+		14D40F0B289A679300ECB159 /* ImageSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		14D40F0C289A679300ECB159 /* ImageSearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		14D40F0F289A6B8F00ECB159 /* ImageSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchModel.swift; sourceTree = "<group>"; };
 		14DA84BB28997F4A00EA8F9E /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		14DA84BC28997F4A00EA8F9E /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
 		14DA84BF2899829800EA8F9E /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +164,10 @@
 				14EE6EA72890DD8500FC44E4 /* SceneDelegate.swift */,
 				14EE6EA92890DD8500FC44E4 /* ViewController.swift */,
 				14EE6EAB2890DD8500FC44E4 /* Main.storyboard */,
+				14D40F0F289A6B8F00ECB159 /* ImageSearchModel.swift */,
+				1458220D289A094300B13710 /* ImageSearchViewController.swift */,
+				14D40F0B289A679300ECB159 /* ImageSearchCollectionViewCell.swift */,
+				14D40F0C289A679300ECB159 /* ImageSearchCollectionViewCell.xib */,
 				14DA84C32899938900EA8F9E /* BeerList */,
 				14A34E1A2897EE4800FFD440 /* BeerViewController.swift */,
 				14E3EA6428935D3F003524FD /* LocationViewController.swift */,
@@ -243,6 +255,7 @@
 				14EE6EAF2890DD8600FC44E4 /* Assets.xcassets in Resources */,
 				14DA84BE28997F4A00EA8F9E /* BeerTableViewCell.xib in Resources */,
 				14E3EA68289384DD003524FD /* SUIT-Regular.ttf in Resources */,
+				14D40F0E289A679300ECB159 /* ImageSearchCollectionViewCell.xib in Resources */,
 				14EE6EAD2890DD8500FC44E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +272,9 @@
 				14A34E1B2897EE4800FFD440 /* BeerViewController.swift in Sources */,
 				149E2DFE28923A9400E4DD5C /* WebViewController.swift in Sources */,
 				14EE6EA62890DD8500FC44E4 /* AppDelegate.swift in Sources */,
+				14D40F10289A6B8F00ECB159 /* ImageSearchModel.swift in Sources */,
 				1435EB9F2898BD19006269CE /* BoxOfficeModel.swift in Sources */,
+				1458220E289A094300B13710 /* ImageSearchViewController.swift in Sources */,
 				14EE6EBA2890E1F800FC44E4 /* SearchViewController.swift in Sources */,
 				149E2DFA2892236800E4DD5C /* LottoViewController.swift in Sources */,
 				14E3EA6528935D3F003524FD /* LocationViewController.swift in Sources */,
@@ -272,6 +287,7 @@
 				14DA84BD28997F4A00EA8F9E /* BeerTableViewCell.swift in Sources */,
 				14EE6EBD2890E4D400FC44E4 /* ListTableViewCell.swift in Sources */,
 				14A34E112897579100FFD440 /* Constant.swift in Sources */,
+				14D40F0D289A679300ECB159 /* ImageSearchCollectionViewCell.swift in Sources */,
 				14DA84C2289983CE00EA8F9E /* BeerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

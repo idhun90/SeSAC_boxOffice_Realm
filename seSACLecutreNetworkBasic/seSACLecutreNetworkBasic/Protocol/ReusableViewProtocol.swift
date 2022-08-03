@@ -18,3 +18,18 @@ extension UITableViewCell: ResuableViewProtocol {
         return String(describing: self)
     }
 }
+
+extension UICollectionViewCell: ResuableViewProtocol {
+    static var resueIdentifier: String {
+        return String(describing: self)
+    }
+}
+
+// 테스트용
+class TestViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+}

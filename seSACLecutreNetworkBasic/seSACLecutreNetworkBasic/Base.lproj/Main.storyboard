@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LMX-Sb-Otk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8o3-65-Vca">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -530,6 +530,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XUv-0g-ifu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3201" y="115"/>
+        </scene>
+        <!--Image Search View Controller-->
+        <scene sceneID="wee-7c-mj6">
+            <objects>
+                <viewController storyboardIdentifier="ImageSearchViewController" id="8o3-65-Vca" customClass="ImageSearchViewController" customModule="seSACLecutreNetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lm3-BA-ywE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vsk-Od-zd6">
+                                <rect key="frame" x="0.0" y="79" width="414" height="817"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V5X-iW-Ua9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-QD-IEY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="kGd-5g-Fnx"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zIQ-63-CzZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9VC-QD-IEY" firstAttribute="leading" secondItem="zIQ-63-CzZ" secondAttribute="leading" id="OBo-re-IlI"/>
+                            <constraint firstAttribute="bottom" secondItem="vsk-Od-zd6" secondAttribute="bottom" id="WuO-0v-Z3O"/>
+                            <constraint firstItem="vsk-Od-zd6" firstAttribute="top" secondItem="9VC-QD-IEY" secondAttribute="bottom" id="Y5a-Bg-cfq"/>
+                            <constraint firstItem="vsk-Od-zd6" firstAttribute="leading" secondItem="zIQ-63-CzZ" secondAttribute="leading" id="cEe-cK-bnS"/>
+                            <constraint firstItem="9VC-QD-IEY" firstAttribute="trailing" secondItem="zIQ-63-CzZ" secondAttribute="trailing" id="j0P-Cw-3mj"/>
+                            <constraint firstItem="vsk-Od-zd6" firstAttribute="trailing" secondItem="zIQ-63-CzZ" secondAttribute="trailing" id="kQG-SJ-tQ9"/>
+                            <constraint firstItem="9VC-QD-IEY" firstAttribute="top" secondItem="zIQ-63-CzZ" secondAttribute="top" id="nLN-Te-N02"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageSearchCollectionView" destination="vsk-Od-zd6" id="3Pi-4X-57C"/>
+                        <outlet property="searchBar" destination="9VC-QD-IEY" id="LFu-Aw-xh7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ld-s8-O4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4046" y="115"/>
         </scene>
     </scenes>
     <resources>
