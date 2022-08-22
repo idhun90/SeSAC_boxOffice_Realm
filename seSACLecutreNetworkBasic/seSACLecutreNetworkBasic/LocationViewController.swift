@@ -13,6 +13,8 @@ class LocationViewController: UIViewController {
     //1.노티를 담당하는 객체를 가져오기
     let notificationCenter = UNUserNotificationCenter.current()
     
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         requestAuthorization()
@@ -77,6 +79,29 @@ class LocationViewController: UIViewController {
     }
     @IBAction func notificationButtonClicked(_ sender: UIButton) {
         sendNotification()
+    }
+    @IBAction func downlodImage(_ sender: UIButton) {
+        
+        let url = "https://apod.nasa.gov/apod/image/2208/M13_final2_sinfirma.jpg"
+        print("1", Thread.isMainThread)
+        
+        
+        DispatchQueue.global().async { // 동시에 여러 작업 가능하게 해줘
+            print("2", Thread.isMainThread)
+            
+            let data = try! Data(contentsOf: URL(string: url)!) // 0101로 바꾸는 과정
+            let image = UIImage(data: data)
+            
+            DispatchQueue.main.async {
+                //화면 전환, 이미지 작업 등 사용자에게 보여주는 작업은 여기에 추가해야함
+                // UI적 변화는 메인에 사용
+                print("3", Thread.isMainThread)
+                self.imageView.image = image
+            }
+            
+        }
+
+        
     }
 }
 
